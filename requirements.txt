@@ -1,0 +1,6 @@
+torch
+streamlit
+transformers
+pillow=
+tensorflow
+keras
