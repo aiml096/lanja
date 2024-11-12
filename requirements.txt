@@ -1,6 +1,6 @@
 torch
 streamlit
 transformers
-pillow=
+pillow
 tensorflow
 keras
