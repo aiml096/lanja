@@ -6,9 +6,9 @@ from transformers import GPT2Tokenizer, GPT2LMHeadModel
 from tensorflow.keras.models import load_model  # type: ignore
 
 # Load pre-trained models
-keras_model = load_model('C:/Users/bharg/OneDrive/Desktop/skin/vs/skin_disease_classifier4.keras')  # TensorFlow/Keras model
-tokenizer = GPT2Tokenizer.from_pretrained('C:/Users/bharg/OneDrive/Desktop/skin/vs/fine_tuned_gpt2')
-chatbot_model = GPT2LMHeadModel.from_pretrained('C:/Users/bharg/OneDrive/Desktop/skin/vs/fine_tuned_gpt2')
+keras_model = load_model('skin_disease_classifier4.keras')  # TensorFlow/Keras model
+#tokenizer = GPT2Tokenizer.from_pretrained('C:/Users/bharg/OneDrive/Desktop/skin/vs/fine_tuned_gpt2')
+#chatbot_model = GPT2LMHeadModel.from_pretrained('C:/Users/bharg/OneDrive/Desktop/skin/vs/fine_tuned_gpt2')
 pytorch_model = GPT2LMHeadModel.from_pretrained('gpt2')
 pytorch_model.load_state_dict(torch.load('C:/Users/bharg/OneDrive/Desktop/skin/vs/pytorch_model2.pth'))
 pytorch_model.eval()
