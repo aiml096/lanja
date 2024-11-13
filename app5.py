@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model  # type: ignore
 import os
 
 # Load pre-trained models
-keras_model = load_model('C:/Users/bharg/Desktop/vs/skin_disease_classifier4.keras')  # TensorFlow/Keras model
+keras_model = load_model('skin_disease_classifier4.keras')  # TensorFlow/Keras model
 tokenizer = GPT2Tokenizer.from_pretrained('C:/Users/bharg/OneDrive/Desktop/skin/vs/fine_tuned_gpt2')
 chatbot_model = GPT2LMHeadModel.from_pretrained('C:/Users/bharg/OneDrive/Desktop/skin/vs/fine_tuned_gpt2')
 pytorch_model = GPT2LMHeadModel.from_pretrained('gpt2')
