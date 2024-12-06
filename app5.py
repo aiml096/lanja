@@ -38,6 +38,7 @@ def classify_with_pytorch(image):
     with torch.no_grad():
         outputs = pytorch_model(image)
         predicted_class = torch.argmax(outputs, dim=1).item()
+        print("hello")
         return class_names[predicted_class]
 
 def get_chatbot_response(question):
