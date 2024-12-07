@@ -57,7 +57,7 @@ st.markdown(
     <style>
     body {
         background-color: #bfb1ae;
-        color: #333;
+        color: #000;
     }
     .reportview-container {
         background-color: #f0f8ff;
